@@ -1,14 +1,1 @@
-{
-    "tfjsVersion": "1.3.1",
-    "tmVersion": "2.4.5",
-    "packageVersion": "0.8.4-alpha2",
-    "packageName": "@teachablemachine/image",
-    "timeStamp": "2023-02-26T15:15:40.477Z",
-    "userMetadata": {},
-    "modelName": "tm-my-image-model",
-    "labels": [
-    "Male",
-    "Female"
-    ],
-    "imageSize": 224
-    }
+{"tfjsVersion":"1.3.1","tmVersion":"2.4.7","packageVersion":"0.8.4-alpha2","packageName":"@teachablemachine/image","timeStamp":"2023-08-27T02:53:27.149Z","userMetadata":{},"modelName":"tm-my-image-model","labels":["Female","Male"],"imageSize":224}
