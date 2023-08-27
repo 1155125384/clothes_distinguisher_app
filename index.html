@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>衣服分析器</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/side_bar.css">
+        <link rel="stylesheet" type="text/css" href="css/light_mode.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    </head>
+
+     <body>
+        <div id="container">
+
+            <nav id="navbar">
+                <div class="logo">
+                    <i class="bx bx-menu menu-icon"></i>
+                    <span class="logo-name">主頁</span>
+                </div>
+                <div class="sidebar">
+                    <div class="logo">
+                        <i class="bx bx-menu menu-icon"></i>
+                        <span class="logo-name">主頁</span>
+                    </div>
+            
+                    <div class="sidebar-content">
+                        <ul class="lists">
+                            <li class="list">
+                                <a href="analysis_index.html" class="nav-link">
+                                    <i class="bx bx-search icon"></i>
+                                    <span class="link">分析器</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="recommendation_index.html" class="nav-link">
+                                    <i class="bx bxs-bookmark-heart icon"></i>
+                                    <span class="link">推薦器</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="index.html" class="nav-link">
+                                    <i class="bx bx-color icon"></i>
+                                    <span class="link">設定為淺色頁面</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="index_dark.html" class="nav-link">
+                                    <i class="bx bx-color icon"></i>
+                                    <span class="link">設定為深色頁面</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header_blank_div"></div>
+
+
+            <div class="function_div">
+                <p>
+                    歡迎來到衣服推薦應用程式<br>
+                    按下以下任何一種功能後即可使用
+                </p>
+            </div>
+
+            <div class="img_div">
+                <img width = 800px src ="img/index.png">
+            </div>
+
+            <div class="vertical-container">
+                <div class="function-item" onclick="window.location.href = 'analysis_index.html';">
+                    <div class="text-container">
+                        <h2>分析器</h2>
+                        <p>根據照片分析衣服風格及種類</p>
+                    </div>
+                    <i class="bx bx-search icon"></i>
+                </div>
+                <div class="function-item" onclick="window.location.href = 'recommendation_index.html';">
+                    <div class="text-container">
+                        <h2>推薦器</h2>
+                        <p>根據使用者及場地推薦穿搭</p>
+                    </div>
+                    <i class="bx bxs-bookmark-heart icon"></i>
+                </div>
+            </div>
+
+            <div class="footer_blank_div"></div>
+        </div>
+
+        <section class="overlay"></section>
+        <script src="js/side_bar.js"></script>
+        <script src="js/set_theme.js"></script>
+    </body>
+</html>

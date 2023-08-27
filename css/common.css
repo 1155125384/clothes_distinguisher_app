@@ -1,0 +1,33 @@
+/* Common setting */
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Common Content Divs*/
+.header_blank_div{
+    height: 150px;
+}
+
+.small_blank_div {
+    height: 50px;
+}
+
+.intro_div {
+    align-items: center; 
+    justify-content: center;
+    align-self: center;
+    padding-top: 20px;
+    height: 150px; 
+}
+
+.footer_blank_div {
+    height: 150px;
+}
+

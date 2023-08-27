@@ -1,0 +1,53 @@
+/* body */
+body {
+    background: #4B362B;
+    color:#ECECEC;
+}
+
+/* nav bar */
+nav {
+    background: #382C1E;
+}
+
+.logo .menu-icon {
+    color: #ECECEC;
+}
+
+.logo .logo-name {
+    color: #ECECEC;
+}
+
+nav .sidebar {
+    background-color: #382C1E;
+}
+
+.lists .nav-link:hover {
+    background-color: #382C1E;
+}
+
+.nav-link .icon {
+    color: #ECECEC;
+}
+
+.nav-link .link {
+    color: #ECECEC;
+}
+
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #ECECEC;
+}
+
+/* index */
+.function_div p{
+    color: #ECECEC;
+}
+
+.function-item {
+    background-color: #382C1E;
+    color: #ECECEC;
+}
+
+.footer_div p {
+    color: lightgray;
+}
