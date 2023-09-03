@@ -2,17 +2,17 @@
     "modelTopology": {
     "class_name": "Sequential",
     "config": {
-    "name": "sequential_4",
+    "name": "sequential_8",
     "layers": [
     {
     "class_name": "Sequential",
     "config": {
-    "name": "sequential_1",
+    "name": "sequential_5",
     "layers": [
     {
     "class_name": "Model",
     "config": {
-    "name": "model1",
+    "name": "model2",
     "layers": [
     {
     "name": "input_1",
@@ -6093,7 +6093,7 @@
     "class_name": "GlobalAveragePooling2D",
     "config": {
     "data_format": "channels_last",
-    "name": "global_average_pooling2d_GlobalAveragePooling2D1",
+    "name": "global_average_pooling2d_GlobalAveragePooling2D2",
     "trainable": true
     }
     }
@@ -6103,7 +6103,7 @@
     {
     "class_name": "Sequential",
     "config": {
-    "name": "sequential_3",
+    "name": "sequential_7",
     "layers": [
     {
     "class_name": "Dense",
@@ -6129,7 +6129,7 @@
     "activity_regularizer": null,
     "kernel_constraint": null,
     "bias_constraint": null,
-    "name": "dense_Dense1",
+    "name": "dense_Dense3",
     "trainable": true,
     "batch_input_shape": [
     null,
@@ -6141,7 +6141,7 @@
     {
     "class_name": "Dense",
     "config": {
-    "units": 2,
+    "units": 10,
     "activation": "softmax",
     "use_bias": false,
     "kernel_initializer": {
@@ -6162,7 +6162,7 @@
     "activity_regularizer": null,
     "kernel_constraint": null,
     "bias_constraint": null,
-    "name": "dense_Dense2",
+    "name": "dense_Dense4",
     "trainable": true
     }
     }
@@ -7432,7 +7432,7 @@
     "dtype": "float32"
     },
     {
-    "name": "dense_Dense1/kernel",
+    "name": "dense_Dense3/kernel",
     "shape": [
     1280,
     100
@@ -7440,17 +7440,17 @@
     "dtype": "float32"
     },
     {
-    "name": "dense_Dense1/bias",
+    "name": "dense_Dense3/bias",
     "shape": [
     100
     ],
     "dtype": "float32"
     },
     {
-    "name": "dense_Dense2/kernel",
+    "name": "dense_Dense4/kernel",
     "shape": [
     100,
-    2
+    10
     ],
     "dtype": "float32"
     },

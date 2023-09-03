@@ -1,0 +1,77 @@
+given 
+
+<h1>服裝風格推薦</h1>
+
+<h2>選擇條件：</h2>
+
+<label for="gender">性別：</label>
+<select id="gender">
+    <option value="boy">男孩</option>
+    <option value="girl">女孩</option>
+</select>
+<br><br>
+
+<label for="venue">場合：</label>
+<select id="venue">
+    <option value="beach">海灘</option>
+    <option value="party">派對</option>
+    <option value="office">辦公室</option>
+    <option value="gym">健身房</option>
+    <option value="wedding">婚禮</option>
+    <option value="club">俱樂部</option>
+    <option value="date_night">約會</option>
+</select>
+<br><br>
+
+<label for="age">年齡範圍：</label>
+<select id="age">
+    <option value="6-11">6-11 歲</option>
+    <option value="12-18">12-18 歲</option>
+    <option value="19-25">19-25 歲</option>
+    <option value="26-35">26-35 歲</option>
+    <option value="36-50">36-50 歲</option>
+    <option value="51+">51+ 歲</option>
+</select>
+<br><br>
+
+<label for="style">風格：</label>
+<select id="style">
+    <option value="casual">休閒</option>
+    <option value="formal">正式</option>
+    <option value="sporty">運動</option>
+    <option value="vintage">復古</option>
+    <option value="romantic">浪漫</option>
+</select>
+<br><br>
+
+<label for="season">季節：</label>
+<select id="season">
+    <option value="spring">春季</option>
+    <option value="summer">夏季</option>
+    <option value="autumn">秋季</option>
+    <option value="winter">冬季</option>
+</select>
+<br><br>
+
+<button onclick="generateRecommendation()">生成推薦</button>
+
+<h2>推薦結果：</h2>
+<p id="recommendationResult"></p>
+
+Please give me the js code that randomly generate the recommendation for this html code
+there are few limitation when generating the recommendation
+1) in traditional chinese
+2) start with color and end with type
+3) color are "黑色", "藍色", "棕色", "綠色", "灰色", "橙色", "紅色", "紫色", "白色", "黃色"
+4) type are "上衣", "連衣裙", "連帽衫", "長袖衫", "褲子", "領衫", "襯衫", "短褲", "裙子", "T恤"
+5) boy are not able to choose "連衣裙", "裙子"
+6) office not able to choose "連帽衫"
+7) gym not able to choose "連衣裙","裙子"
+8) wedding not able to choose "連帽衫", "短褲", "T恤" and can only be "白色"
+9) date_night not able to choose "短褲"
+10) 6-11 not able to choose "連帽衫"
+11) formal not able to choose "上衣", "連帽衫", "長袖衫", "領衫", "短褲", "裙子", "T恤" and "綠色","橙色", "紅色", "紫色", "白色"
+12) vintage not able to choose "連帽衫"
+13) romantic not able to choose "短褲", "T恤" and "綠色", "橙色", "紅色", "紫色", "黃色"
+14) summer not able to choose "長袖衫"
+15) winter not able to choose "短褲", "裙子"

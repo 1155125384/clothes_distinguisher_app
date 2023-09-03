@@ -49,3 +49,19 @@ nav .sidebar {
 .footer_div p {
     color: darkgray;
 }
+
+/* analysis_page */
+.start_button {
+    color: #fff;
+    background-color: #4B362B;
+}
+
+.end_button {
+    color: #fff;
+    background-color: #e65a0e;
+}
+
+/* recommendation_page*/
+.custom-dropdown select {
+    background-color: #f1f1f1;
+}

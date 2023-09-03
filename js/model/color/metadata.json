@@ -3,12 +3,20 @@
     "tmVersion": "2.4.5",
     "packageVersion": "0.8.4-alpha2",
     "packageName": "@teachablemachine/image",
-    "timeStamp": "2023-02-26T15:15:40.477Z",
+    "timeStamp": "2023-01-21T06:02:29.017Z",
     "userMetadata": {},
     "modelName": "tm-my-image-model",
     "labels": [
-    "Male",
-    "Female"
+    "Black",
+    "Blue",
+    "Brown",
+    "Green",
+    "Grey",
+    "Orange",
+    "Red",
+    "Violet",
+    "White",
+    "Yellow"
     ],
     "imageSize": 224
     }

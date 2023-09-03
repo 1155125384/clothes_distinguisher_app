@@ -4,8 +4,9 @@
         <title>衣服分析器</title>
         <link rel="stylesheet" type="text/css" href="css/common.css">
         <link rel="stylesheet" type="text/css" href="css/side_bar.css">
-        <link rel="stylesheet" type="text/css" href="css/dark_mode.css">
+        <link rel="stylesheet" type="text/css" href="css/light_mode.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/analysis.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
     </head>
 
@@ -15,42 +16,42 @@
             <nav id="navbar">
                 <div class="logo">
                     <i class="bx bx-menu menu-icon"></i>
-                    <span class="logo-name">主頁</span>
+                    <span class="logo-name">分析器</span>
                 </div>
                 <div class="sidebar">
                     <div class="logo">
-                        <i class="bx bx-home menu-icon"></i>
-                        <span class="logo-name">主頁</span>
+                        <i class="bx bx-menu menu-icon"></i>
+                        <span class="logo-name">分析器</span>
                     </div>
             
                     <div class="sidebar-content">
                         <ul class="lists">
                             <li class="list">
-                                <a href="index_dark.html" class="nav-link">
-                                    <i class="bx bx-search icon"></i>
+                                <a href="index.html" class="nav-link">
+                                    <i class="bx bx-home icon"></i>
                                     <span class="link">主頁</span>
                                 </a>
                             </li>
                             <li class="list">
-                                <a href="analysis_index_dark.html" class="nav-link">
+                                <a href="analysis_index.html" class="nav-link">
                                     <i class="bx bx-search icon"></i>
                                     <span class="link">分析器</span>
                                 </a>
                             </li>
                             <li class="list">
-                                <a href="recommendation_index_dark.html" class="nav-link">
+                                <a href="recommendation_index.html" class="nav-link">
                                     <i class="bx bxs-bookmark-heart icon"></i>
                                     <span class="link">推薦器</span>
                                 </a>
                             </li>
                             <li class="list">
-                                <a href="index.html" class="nav-link">
+                                <a href="analysis_index2.html" class="nav-link">
                                     <i class="bx bx-color icon"></i>
                                     <span class="link">設定為淺色頁面</span>
                                 </a>
                             </li>
                             <li class="list">
-                                <a href="index_dark.html" class="nav-link">
+                                <a href="analysis_index2_dark.html" class="nav-link">
                                     <i class="bx bx-color icon"></i>
                                     <span class="link">設定為深色頁面</span>
                                 </a>
@@ -62,40 +63,27 @@
 
             <div class="header_blank_div"></div>
 
-
-            <div class="function_div">
-                <p>
-                    歡迎來到衣服推薦應用程式<br>
-                    按下以下任何一種功能後即可使用
-                </p>
+            <button type="button" class="start_button" onclick="type_init()">按此開始分析衣服類型和顏色</button>
+            <div class="webcam_container" id="type_webcam_container"></div>
+            <div class="left_right_container">
+                <div class="label_container" id="type_label_container"></div>
+                <div class="label_container" id="color_label_container"></div>
             </div>
-
-            <div class="img_div">
-                <img width = 800px src ="img/index.png">
-            </div>
-
-            <div class="vertical-container">
-                <div class="function-item" onclick="window.location.href = 'analysis_index_dark.html';">
-                    <div class="text-container">
-                        <h2>分析器</h2>
-                        <p>根據照片分析衣服風格及種類</p>
-                    </div>
-                    <i class="bx bx-search icon"></i>
-                </div>
-                <div class="function-item" onclick="window.location.href = 'recommendation_index_dark.html';">
-                    <div class="text-container">
-                        <h2>推薦器</h2>
-                        <p>根據使用者及場地推薦穿搭</p>
-                    </div>
-                    <i class="bx bxs-bookmark-heart icon"></i>
-                </div>
-            </div>
+            <button type="button" class="end_button" id="type_confirm_button" onclick="type_showResultsAndStop()" style="display: none;">確認結果並停止</button>
+            <div class="label_container" id="type_result_container"></div>
+            <button type="button" class="start_button" style="display: none;" onclick="try_once_more()">再試另一種穿搭</button>
+            <button type="button" class="end_button" style="display: none;" onclick="back_home_page()">回到主頁</button>
 
             <div class="footer_blank_div"></div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+        <script src="js/model.js"> </script>
         <section class="overlay"></section>
         <script src="js/side_bar.js"></script>
         <script src="js/set_theme.js"></script>
     </body>
 </html>
+
+

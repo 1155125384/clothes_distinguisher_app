@@ -1,7 +1,7 @@
 /* body */
 body {
     background: #4B362B;
-    color:#ECECEC;
+    color: #ECECEC;
 }
 
 /* nav bar */
@@ -35,11 +35,11 @@ nav .sidebar {
 
 .lists .nav-link:hover .icon,
 .lists .nav-link:hover .link {
-  color: #ECECEC;
+    color: #ECECEC;
 }
 
 /* index */
-.function_div p{
+.function_div p {
     color: #ECECEC;
 }
 
@@ -51,3 +51,21 @@ nav .sidebar {
 .footer_div p {
     color: lightgray;
 }
+
+/* analysis_page */
+.start_button {
+    color: #13293D;
+    background-color: #f2f2f29c;
+}
+
+.end_button {
+    color: #13293D;
+    background-color: #ECECEC;
+}
+
+/* recommendation_page*/
+.custom-dropdown select {
+    background-color: #13293D;;
+    color: #ECECEC;
+}
+

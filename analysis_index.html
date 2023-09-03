@@ -1,7 +1,84 @@
-<div>Teachable Machine Image Model</div>
-<button type="button" onclick="init()">Start</button>
-<div id="webcam-container"></div>
-<div id="label-container"></div>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-<script src="js/model_gender.js"> </script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>衣服分析器</title>
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/side_bar.css">
+        <link rel="stylesheet" type="text/css" href="css/light_mode.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/analysis.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    </head>
+
+     <body>
+        <div id="container">
+
+            <nav id="navbar">
+                <div class="logo">
+                    <i class="bx bx-menu menu-icon"></i>
+                    <span class="logo-name">分析器</span>
+                </div>
+                <div class="sidebar">
+                    <div class="logo">
+                        <i class="bx bx-menu menu-icon"></i>
+                        <span class="logo-name">分析器</span>
+                    </div>
+            
+                    <div class="sidebar-content">
+                        <ul class="lists">
+                            <li class="list">
+                                <a href="index.html" class="nav-link">
+                                    <i class="bx bx-home icon"></i>
+                                    <span class="link">主頁</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="analysis_index.html" class="nav-link">
+                                    <i class="bx bx-search icon"></i>
+                                    <span class="link">分析器</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="recommendation_index.html" class="nav-link">
+                                    <i class="bx bxs-bookmark-heart icon"></i>
+                                    <span class="link">推薦器</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="analysis_index.html" class="nav-link">
+                                    <i class="bx bx-color icon"></i>
+                                    <span class="link">設定為淺色頁面</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="analysis_index_dark.html" class="nav-link">
+                                    <i class="bx bx-color icon"></i>
+                                    <span class="link">設定為深色頁面</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header_blank_div"></div>
+
+            <button type="button" class="start_button" onclick="gender_init()">按此開始分析性別</button>
+            <div class="webcam_container" id="gender_webcam_container"></div>
+            <div class="label_container" id="gender_label_container"></div>
+            <button type="button" class="end_button" id="gender_confirm_button" onclick="gender_showResultAndStop()" style="display: none;">確認結果並停止</button>
+            <div class="label_container" id="gender_result_container"></div>
+
+            <div class="footer_blank_div"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+        <script src="js/model.js"> </script>
+        <section class="overlay"></section>
+        <script src="js/side_bar.js"></script>
+        <script src="js/set_theme.js"></script>
+    </body>
+</html>
+
+

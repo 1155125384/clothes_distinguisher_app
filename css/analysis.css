@@ -1,0 +1,48 @@
+.start_button {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 45px;
+    width: max-content;
+    align-self: center;
+}
+
+.left_right_container{
+    display: flex;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+}
+
+.webcam_container {
+    margin: 20px;
+    display: inline-block;
+    align-self: center;
+    align-items: center;
+}
+
+.label_container {
+    margin: 20px;
+    display: inline;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.end_button {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 45px;
+    width: max-content;
+    align-self: center;
+}
