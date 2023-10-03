@@ -12,7 +12,7 @@ async function gender_init() {
 
   const flip = true; // whether to flip the webcam
   gender_webcam = new tmImage.Webcam(700, 700, flip); // width, height, flip
-  await gender_webcam.setup(); // request access to the webcam
+  await gender_webcam.setup({ facingMode: "environment" }); // request access to the webcam
   await gender_webcam.play();
   window.requestAnimationFrame(gender_loop);
 
@@ -130,7 +130,7 @@ async function type_init() {
 
   const flip = true; // whether to flip the webcam
   type_webcam = new tmImage.Webcam(700, 700, flip); // width, height, flip
-  await type_webcam.setup(); // request access to the webcam
+  await type_webcam.setup({ facingMode: "environment" }); // request access to the webcam
   await type_webcam.play();
   window.requestAnimationFrame(loop);
 
