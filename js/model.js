@@ -12,7 +12,13 @@ async function gender_init() {
 
   const flip = true; // whether to flip the webcam
   gender_webcam = new tmImage.Webcam(700, 700, flip); // width, height, flip
-  await gender_webcam.setup({ facingMode: "environment" }); // request access to the webcam
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Use the front-facing camera if available
+    await gender_webcam.setup({ facingMode: "user" }); 
+  } else {
+    // Use the environment/back camera as default
+    await gender_webcam.setup({ facingMode: "environment" }); 
+  }
   await gender_webcam.play();
   window.requestAnimationFrame(gender_loop);
 
@@ -130,7 +136,13 @@ async function type_init() {
 
   const flip = true; // whether to flip the webcam
   type_webcam = new tmImage.Webcam(700, 700, flip); // width, height, flip
-  await type_webcam.setup({ facingMode: "environment" }); // request access to the webcam
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Use the front-facing camera if available
+    await type_webcam.setup({ facingMode: "user" }); 
+  } else {
+    // Use the environment/back camera as default
+    await type_webcam.setup({ facingMode: "environment" }); 
+  }
   await type_webcam.play();
   window.requestAnimationFrame(loop);
 
